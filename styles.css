@@ -1,0 +1,204 @@
+body{
+    padding: 1rem;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    background-color: darkgrey;
+}
+
+h1{
+    margin-bottom: 1rem;
+}
+
+nav{
+    padding-top: 8px;
+    background-color: whitesmoke;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.3em;
+    color: black;
+    margin-right: 40px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform:scaleX(0);
+    transform-origin: right;
+    transition: transform .4s;
+}
+
+.navigation a:hover::after{
+    transform:scaleX(1);
+    transform-origin: left;
+}
+
+.conteneur{
+    display: flex;
+}
+
+img{
+    height: 525px;
+    width: 700px;
+}
+
+.limite{
+    background-color: black;
+    width: 1%;
+}
+
+.lim_1{
+    background-color: #666;
+    height: 15.3%;
+    width: 100%;
+}
+
+.lim_2{
+    background-color: white;
+    height: 12.9%;
+    width: 100%;
+}
+
+.info{
+    border: 1px solid black;
+    padding: 1rem;
+
+}
+
+.info p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info ul li {
+    margin-bottom: 5px;
+}
+
+.info ul li:first-child {
+    font-weight: bold;
+}
+
+.info ul li:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.info ul li:last-child {
+    margin-bottom: 0;
+}
+
+.contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contact h2 {
+    color: #333;
+}
+
+.contact p {
+    color: #666;
+}
+
+.contact form {
+    margin-bottom: 20px;
+}
+
+.contact form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin-bottom: 10px;
+}
+
+.contact ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour la section des projets */
+.projet {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.projet h2 {
+    color: #333;
+}
+
+.projet p {
+    color: #666;
+}
+
+.projet ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projet ul li {
+    margin-bottom: 10px;
+}
+
+.projet ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.projet ul li a:hover {
+    text-decoration: underline;
+}
